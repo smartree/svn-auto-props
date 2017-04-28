@@ -1,0 +1,439 @@
+# Add this stuff at bottom of your local file ~/.subversion/config
+#Note: for Windows this is normally found at
+# C:\Documents and Settings\{username}\Application Data\Subversion\config
+
+[miscellany]
+enable-auto-props = yes
+
+# Note: you may wish to add svn:keywords as well, depending on your project requirements
+# E.g. svn:keywords=Id Revision
+# If you use dates in your keywords, release artifacts may depend on the
+# timezone in the rolling environment.  It might be useful to set TZ=UTC in
+# the environment to facilitate pre-release review.
+
+# Do not default any file types to svn:executable=*.
+# This should only be done on an individual basis as required.
+
+# Please do not use svn:mime-type=application/xml for xml files as that causes
+# SVN to treat them as binary - use text/xml or omit the setting entirely
+
+########https://www.apache.org/dev/svn-eol-style.txt
+[auto-props]
+INSTALL = svn:eol-style=native
+KEYS = svn:eol-style=native
+Makefile = svn:eol-style=native
+LICENSE = svn:eol-style=native
+NOTICE = svn:eol-style=native
+README = svn:eol-style=native
+abs-linkmap = svn:eol-style=native
+abs-menulinks = svn:eol-style=native
+*.aart = svn:eol-style=native
+*.ac = svn:eol-style=native
+*.am = svn:eol-style=native
+*.apt = svn:eol-style=native
+*.as = svn:eol-style=native
+*.bat = svn:eol-style=native
+*.bsh = svn:eol-style=native
+*.c = svn:eol-style=native
+*.cat = svn:eol-style=native
+*.cgi = svn:eol-style=native
+*.classpath = svn:eol-style=native
+*.cmd = svn:eol-style=native
+*.cnd = svn:eol-style=native
+*.conf = svn:eol-style=native
+*.config = svn:eol-style=native
+*.cpp = svn:eol-style=native
+*.css = svn:eol-style=native
+*.cwiki = svn:eol-style=native
+*.data = svn:eol-style=native
+*.dcl = svn:eol-style=native
+*.doc = svn:mime-type=application/msword
+*.dsp = svn:eol-style=CRLF
+*.dsw = svn:eol-style=CRLF
+*.dtd = svn:eol-style=native
+*.egrm = svn:eol-style=native
+*.ent = svn:eol-style=native
+*.ft = svn:eol-style=native
+*.fn = svn:eol-style=native
+*.fv = svn:eol-style=native
+*.g = svn:eol-style=native
+*.gif = svn:mime-type=image/gif
+*.grm = svn:eol-style=native
+*.gz = svn:mime-type=application/x-gzip
+*.h = svn:eol-style=native
+*.htc = svn:eol-style=native
+.htaccess = svn:eol-style=native
+*.handlers = svn:eol-style=native
+*.html = svn:eol-style=native
+*.ico = svn:mime-type=image/x-icon
+*.ihtml = svn:eol-style=native
+*.in = svn:eol-style=native
+*.java = svn:eol-style=native
+*.jmx = svn:eol-style=LF
+*.jpg = svn:mime-type=image/jpeg
+*.jsp = svn:eol-style=native
+*.js = svn:eol-style=native
+*.junit = svn:eol-style=native
+*.jx = svn:eol-style=native
+*.m = svn:eol-style=native
+*.m4 = svn:eol-style=native
+*.manifest = svn:eol-style=native
+*.mdo = svn:eol-style=native
+# markdown (CMS)
+*.mdtext = svn:eol-style=native
+*.meta = svn:eol-style=native
+*.mf = svn:eol-style=native
+*.MF = svn:eol-style=native
+*.mod = svn:eol-style=native
+*.ms = svn:eol-style=native
+*.mxml = svn:eol-style=native
+*.n3 = svn:eol-style=native
+*.nroff = svn:eol-style=native
+*.patch = svn:eol-style=native
+*.pdf = svn:mime-type=application/pdf
+*.pen = svn:eol-style=native
+*.php = svn:eol-style=native
+*.pl = svn:eol-style=native
+*.pm = svn:eol-style=native
+*.png = svn:mime-type=image/png
+*.pod = svn:eol-style=native
+*.pom = svn:eol-style=native
+*.pro = svn:eol-style=native
+*.project = svn:eol-style=native
+*.properties = svn:eol-style=native
+*.py = svn:eol-style=native
+*.rb = svn:eol-style=native
+*.rdf = svn:eol-style=native
+*.rnc = svn:eol-style=native
+*.rng = svn:eol-style=native
+*.rnx = svn:eol-style=native
+*.roles = svn:eol-style=native
+*.rss = svn:eol-style=native
+# Restructured text (CMS)
+*.rst = svn:eol-style=native
+*.scala = svn:eol-style=native
+*.schemas = svn:eol-style=native
+*.sh = svn:eol-style=native
+*.sql = svn:eol-style=native
+*.svg = svn:eol-style=native
+*.swc = svn:mime-type=application/octet-stream 
+*.tar = svn:mime-type=application/octet-stream
+*.tgz = svn:mime-type=application/octet-stream
+*.tif = svn:mime-type=image/tiff
+*.tiff = svn:mime-type=image/tiff
+*.tld = svn:eol-style=native
+*.txt = svn:eol-style=native
+*.types = svn:eol-style=native
+*.vm = svn:eol-style=native
+*.vsl = svn:eol-style=native
+*.wsdd = svn:eol-style=native
+*.wsdl = svn:eol-style=native
+*.xargs = svn:eol-style=native
+*.xcat = svn:eol-style=native
+*.xconf = svn:eol-style=native
+*.xegrm = svn:eol-style=native
+*.xgrm = svn:eol-style=native
+*.xhtml = svn:eol-style=native
+*.xhtml2 = svn:eol-style=native
+*.xlex = svn:eol-style=native
+*.xlog = svn:eol-style=native
+*.xmap = svn:eol-style=native
+*.xml = svn:eol-style=native
+*.xpm = svn:eol-style=native
+*.xroles = svn:eol-style=native
+*.xsamples = svn:eol-style=native
+*.xsd = svn:eol-style=native
+*.xsl = svn:eol-style=native
+*.xslt = svn:eol-style=native
+*.xsp = svn:eol-style=native
+*.xtest = svn:eol-style=native
+*.xul = svn:eol-style=native
+*.xweb = svn:eol-style=native
+*.xwelcome = svn:eol-style=native
+
+########https://www.dcepler.net/post.cfm/subversion-auto-properties
+# Code formats
+*.as         = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.bat        = svn:eol-style=CRLF; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain; svn:executable
+*.cmd        = svn:eol-style=CRLF; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain; svn:executable
+*.c          = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.cfc        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.cfm        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.cgi        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn-mine-type=text/plain
+*.cpp        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.groovy     = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.gsp        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.h          = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.java       = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.js         = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/javascript
+*.jsp        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.m          = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.php        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/x-php
+*.pl         = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/x-perl; svn:executable
+*.pm         = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/x-perl
+*.py         = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/x-python; svn:executable
+*.sh         = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/x-sh; svn:executable
+# Image formats
+*.bmp        = svn:mime-type=image/bmp
+*.gif        = svn:mime-type=image/gif
+*.ico        = svn:mime-type=image/ico
+*.jpeg       = svn:mime-type=image/jpeg
+*.jpg        = svn:mime-type=image/jpeg
+*.png        = svn:mime-type=image/png
+*.tif        = svn:mime-type=image/tiff
+*.tiff       = svn:mime-type=image/tiff
+# Data formats
+*.avi        = svn:mime-type=video/avi
+*.doc        = svn:mime-type=application/msword
+*.eps        = svn:mime-type=application/postscript
+*.gz         = svn:mime-type=application/gzip
+*.jar        = svn:mime-type=application/java-archive
+*.mov        = svn:mime-type=video/quicktime
+*.mp3        = svn:mime-type=audio/mpeg
+*.pdf        = svn:mime-type=application/pdf
+*.ppt        = svn:mime-type=application/vnd.ms-powerpoint
+*.ps         = svn:mime-type=application/postscript
+*.psd        = svn:mime-type=application/photoshop
+*.rtf        = svn:mime-type=text/rtf
+*.swf        = svn:mime-type=application/x-shockwave-flash
+*.tar        = svn:mime-type=application/x-tar
+*.tgz        = svn:mime-type=application/gzip
+*.wav        = svn:mime-type=audio/wav
+*.xls        = svn:mime-type=application/vnd.ms-excel
+*.zip        = svn:mime-type=application/zip
+# Text formats
+.htaccess    = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.cfg        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.css        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/css
+*.csv        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.dtd        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/xml
+*.htm        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/html
+*.html       = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/html
+*.ini        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.properties = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.sql        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/x-sql
+*.txt        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+*.xhtml      = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/xhtml+xml
+*.xml        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/xml
+*.xsd        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/xml
+*.xsl        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/xml
+*.xslt       = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/xml
+*.xul        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/xul
+*.yml        = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+AUTHORS      = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+BUGS         = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+CHANGES      = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+COPYING*     = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+DEPENDENCIES = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+DEPRECATED   = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+INSTALL*     = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+LICENSE      = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+Makefile*    = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+MANIFEST*    = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+PLATFORMS    = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+README       = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+TODO         = svn:eol-style=native; svn:keywords="Author Date Id Rev URL"; svn:mime-type=text/plain
+
+########https://www4.cs.fau.de/~morty/autoprops.txt
+###############################################################################
+#                                                                             #
+#              Morty's SVN auto-props collection                              #
+#                                                                             #
+# Add this list to the [auto-props] - section of your SVN configuration file. #
+# It is normaly at the end of your configfile.                                #
+# Also make sure, that enable-auto-props is set to yes and has no "#" in      #
+# front of it.                                                                #
+#                                                                             #
+# The config-file can be found at:                                            #
+#   * Unix: ~/.subversion/config                                              #
+#   * Windows: %APPDATA%\Subversion\config                                    #
+#                                                                             #
+# If you are missing a file extension of find a mistake feel free to mail me  #
+# at morty@cs.fau.de                                                          #
+#                                                                             #
+###############################################################################
+
+
+*.bat	= svn:eol-style=CRLF; svn:executable 
+*.bin	= svn:mime-type=application/octet-stream
+*.bmp	= svn:mime-type=image/bmp 
+*.bz2	= svn:mime-type=application/x-bzip2; svn:needs-lock
+*.c	= svn:mime-type=text/plain; svn:eol-style=native; svn:keywords=Rev 
+*.class	= svn:mime-type=application/java
+*.cmd	= svn:eol-style=CRLF; svn:executable; svn:mime-type=application/bat 
+*.cpp	= svn:eol-style=native; svn:keywords=Rev; svn:mime-type=text/plain 
+*.css	= svn:mime-type=text/css;svn:eol-style=native
+*.dll	= svn:mime-type=application/x-msdownload; svn:executable; 
+*.doc	= svn:mime-type=application/msword 
+*.docm	= svn:mime-type=application/vnd.ms-word.document.macroEnabled.12; svn:needs-lock
+*.docx	= svn:mime-type=application/vnd.openxmlformats-officedocument.wordprocessingml.document; svn:needs-lock
+*.dot	= svn:mime-type=application/msword 
+*.dotm	= svn:mime-type=application/vnd.ms-word.template.macroEnabled.12; svn:needs-lock
+*.dotx	= svn:mime-type=application/vnd.openxmlformats-officedocument.wordprocessingml.template; svn:needs-lock
+*.dsp	= svn:eol-style=CRLF 
+*.dsw	= svn:eol-style=CRLF 
+*.dtd	= svn:mime-type=text/plain;svn:eol-style=native
+*.dvi	= svn:mime-type=application/x-dvi 
+*.ent	= svn:mime-type=text/plain;svn:eol-style=native
+*.exe	= svn:mime-type=application/octet-stream; svn:executable 
+
+*.gif	= svn:mime-type=image/gif 
+*.gz	= svn:mime-type=application/x-gzip 
+*.h	= svn:eol-style=native; svn:keywords=Rev; svn:mime-type=text/plain 
+*.hpp	= svn:mime-type=text/plain; svn:eol-style=native;
+*.htm	= svn:mime-type=text/html; svn:eol-style=native;
+*.html	= svn:mime-type=text/html; svn:eol-style=native;
+*.jar	= svn:mime-type=application/java-archive
+*.java	= svn:mime-type=text/plain;svn:eol-style=native
+*.jelly	= svn:mime-type=text/plain;svn:eol-style=native
+*.jpg	= svn:mime-type=image/jpeg 
+*.jpeg	= svn:mime-type=image/jpeg
+*.js	= svn:mime-type=application/x-javascript; svn:eol-style=native
+*.jsp	= svn:mime-type=text/plain;svn:eol-style=native
+*.mak	= svn:eol-style=native 
+*.mdb	= svn:mime-type=application/x-msaccess 
+*.mpp	= svn:mime-type=application/vnd.ms-project 
+*.msg	= svn:mime-type=application/vnd.ms-outlook 
+*.obj	= svn:mime-type=application/octet-stream
+*.odb	= svn:mime-type=application/vnd.oasis.opendocument.database 
+*.odc	= svn:mime-type=application/vnd.oasis.opendocument.chart 
+*.odf	= svn:mime-type=application/vnd.oasis.opendocument.formula 
+*.odg	= svn:mime-type=application/vnd.oasis.opendocument.graphics 
+*.odi	= svn:mime-type=application/vnd.oasis.opendocument.image 
+*.odm	= svn:mime-type=application/vnd.oasis.opendocument.text-master 
+*.odp	= svn:mime-type=application/vnd.oasis.opendocument.presentation 
+*.ods	= svn:mime-type=application/vnd.oasis.opendocument.spreadsheet 
+*.odt	= svn:mime-type=application/vnd.oasis.opendocument.text 
+*.otg	= svn:mime-type=application/vnd.oasis.opendocument.graphics-template 
+*.oth	= svn:mime-type=application/vnd.oasis.opendocument.text-web 
+*.otp	= svn:mime-type=application/vnd.oasis.opendocument.presentation-template 
+*.ots	= svn:mime-type=application/vnd.oasis.opendocument.spreadsheet-template 
+*.ott	= svn:mime-type=application/vnd.oasis.opendocument.text-template 
+*.oxt	= svn:mime-type=application/vnd.openofficeorg.extension 
+*.pbm	= svn:mime-type=image/x-portable-bitmap 
+*.pdf	= svn:mime-type=application/pdf 
+*.pgm	= svn:mime-type=image/x-portable-graymap 
+*.png	= svn:mime-type=image/png 
+*.pnm	= svn:mime-type=image/x-portable-anymap 
+*.pot	= svn:mime-type=application/vnd.ms-powerpoint 
+*.potm	= svn:mime-type=application/vnd.ms-powerpoint.presentation.macroEnabled.12; svn:needs-lock
+*.potx	= svn:mime-type=application/vnd.openxmlformats-officedocument.presentationml.template; svn:needs-lock
+*.ppa	= svn:mime-type=application/vnd.ms-powerpoint; svn:needs-lock
+*.ppam	= svn:mime-type=application/vnd.ms-powerpoint.addin.macroEnabled.12; svn:needs-lock
+*.ppm	= svn:mime-type=image/x-portable-pixmap 
+*.pps	= svn:mime-type=application/vnd.ms-powerpoint 
+*.ppsm	= svn:mime-type=application/vnd.ms-powerpoint.slideshow.macroEnabled.12; svn:needs-lock
+*.ppsx	= svn:mime-type=application/vnd.openxmlformats-officedocument.presentationml.slideshow; svn:needs-lock
+*.ppt	= svn:mime-type=application/vnd.ms-powerpoint 
+*.pptm	= svn:mime-type=application/vnd.ms-powerpoint.presentation.macroEnabled.1; svn:needs-lock
+*.pptx	= svn:mime-type=application/vnd.openxmlformats-officedocument.presentationml.presentation; svn:needs-lock
+*.properties	= svn:mime-type=text/plain;svn:eol-style=native
+*.ps	= svn:mime-type=application/postscript 
+*.pub	= svn:mime-type=application/x-mspublisher 
+*.py	= svn:executable 
+*.q	= svn:keywords=Rev 
+*.rtf	= svn:mime-type=application/rtf 
+*.sh	= svn:mime-type=application/x-sh; svn:executable 
+*.html	= svn:mime-type=text/html; svn:eol-style=native; 
+*.sldm	= svn:mime-type=application/vnd.ms-powerpoint.slide.macroEnabled.12; svn:needs-lock
+*.sldx	= svn:mime-type=application/vnd.openxmlformats-officedocument.presentationml.slide; svn:needs-lock
+*.sln	= svn:eol-style=CRLF 
+*.sql	= svn:mime-type=text/plain;svn:eol-style=native
+*.svg	= svn:mime-type=image/svg+xml 
+*.tar	= svn:mime-type=application/x-tar 
+*.tex	= svn:mime-type=text/x-tex; svn:eol-style=native; svn:keywords=Rev 
+*.tgz	= svn:mime-type=application/x-compressed 
+*.tif	= svn:mime-type=image/tiff 
+*.tiff	= svn:mime-type=image/tiff
+*.txt	= svn:eol-style=native; svn:mime-type=text/plain 
+*.vcproj	= svn:eol-style=CRLF 
+*.vsd	= svn:mime-type=application/x-visio; svn:needs-lock
+*.vsl	= svn:mime-type=text/plain;svn:eol-style=native
+*.vst	= svn:mime-type=application/x-visio; svn:needs-lock
+*.vsw	= svn:mime-type=application/x-visio; svn:needs-lock
+*.wsdl	= svn:mime-type=text/xml;svn:eol-style=native
+*.xhtml	= svn:mime-type=application/xhtml+xml; svn:eol-style=native
+*.xla	= svn:mime-type=application/vnd.ms-excel 
+*.xlam	= svn:mime-type=application/vnd.ms-excel.addin.macroEnabled.12; svn:needs-lock
+*.xlc	= svn:mime-type=application/vnd.ms-excel 
+*.xlm	= svn:mime-type=application/vnd.ms-excel 
+*.xls	= svn:mime-type=application/vnd.ms-excel; svn:needs-lock 
+*.xlsb	= svn:mime-type=application/vnd.ms-excel.sheet.binary.macroEnabled.12; svn:needs-lock
+*.xlsm	= svn:mime-type=application/vnd.ms-excel.sheet.macroEnabled.12; svn:needs-lock
+*.xlsx	= svn:mime-type=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; svn:needs-lock
+*.xlt	= svn:mime-type=application/vnd.ms-excel 
+*.xltm	= svn:mime-type=application/vnd.ms-excel.template.macroEnabled.12; svn:needs-lock
+*.xltx	= svn:mime-type=application/vnd.openxmlformats-officedocument.spreadsheetml.template; svn:needs-lock
+*.xlw	= svn:mime-type=application/vnd.ms-excel 
+*.xsd	= svn:mime-type=text/xml; svn:eol-style=native
+*.xml	= svn:mime-type=text/xml; svn:eol-style=native
+*.xsl	= svn:mime-type=text/xml; svn:eol-style=native 
+*.zip	= svn:mime-type=application/zip; svn:needs-lock
+Makefile	= svn:eol-style=native
+
+
+########http://stackoverflow.com/questions/711053/automatically-add-svnneeds-lock/18571763#18571763
+*.bmp = svn:mime-type=image/bmp;svn:needs-lock=*
+*.gif = svn:mime-type=image/gif;svn:needs-lock=*
+*.ico = svn:mime-type=image/x-icon;svn:needs-lock=*
+*.jpeg = svn:mime-type=image/jpeg;svn:needs-lock=*
+*.jpg = svn:mime-type=image/jpeg;svn:needs-lock=*
+*.png = svn:mime-type=image/png;svn:needs-lock=*
+*.tif = svn:mime-type=image/tiff;svn:needs-lock=*
+*.tiff = svn:mime-type=image/tiff;svn:needs-lock=*    
+*.doc = svn:mime-type=application/x-msword;svn:needs-lock=*
+*.docx = svn:mime-type=application/x-msword;svn:needs-lock=*
+*.jar = svn:mime-type=application/octet-stream;svn:needs-lock=*
+*.odc = svn:mime-type=application/vnd.oasis.opendocument.chart;svn:needs-lock=*
+*.odf = svn:mime-type=application/vnd.oasis.opendocument.formula;svn:needs-lock=*
+*.odg = svn:mime-type=application/vnd.oasis.opendocument.graphics;svn:needs-lock=*
+*.odi = svn:mime-type=application/vnd.oasis.opendocument.image;svn:needs-lock=*
+*.odp = svn:mime-type=application/vnd.oasis.opendocument.presentation;svn:needs-lock=*
+*.ods = svn:mime-type=application/vnd.oasis.opendocument.spreadsheet;svn:needs-lock=*
+*.odt = svn:mime-type=application/vnd.oasis.opendocument.text;svn:needs-lock=*
+*.pdf = svn:mime-type=application/pdf;svn:needs-lock=*
+*.ppt = svn:mime-type=application/vnd.ms-powerpoint;svn:needs-lock=*
+*.ser = svn:mime-type=application/octet-stream;svn:needs-lock=*
+*.swf = svn:mime-type=application/x-shockwave-flash;svn:needs-lock=*
+*.vsd = svn:mime-type=application/x-visio;svn:needs-lock=*
+*.xls = svn:mime-type=application/vnd.ms-excel;svn:needs-lock=*
+*.zip = svn:mime-type=application/zip;svn:needs-lock=*
+
+
+########http://padre.perlide.org/svn-mime-types.html
+[miscellany]
+enable-auto-props = yes
+
+[auto-props]
+*.pl = svn:eol-style=native; svn:mime-type=text/x-perl; svn:executable
+*.PL = svn:eol-style=native; svn:mime-type=text/x-perl
+*.pm = svn:eol-style=native; svn:mime-type=text/x-perl
+*.psgi = svn:eol-style=native; svn:mime-type=text/x-perl
+*.perl = svn:eol-style=native; svn:mime-type=text/x-perl
+*.t = svn:eol-style=native; svn:mime-type=text/x-perl
+*.png = svn:mime-type=image/png
+*.gif = svn:mime-type=image/gif
+*.jpg = svn:mime-type=image/jpeg
+*.yml = svn:eol-style=native; svn:mime-type=application/x-yaml
+*.yaml = svn:eol-style=native; svn:mime-type=application/x-yaml
+*.js = svn:eol-style=native; svn:mime-type=application/javascript
+*.sh = svn:eol-style=native; svn:mime-type=application/x-sh
+*.xsl = svn:eol-style=native; svn:mime-type=application/xsl+xml
+*.xslt = svn:eol-style=native; svn:mime-type=application/xslt+xml
+*.svg = svn:eol-style=native; svn:mime-type=image/svg+xml
+*.ico = svn:mime-type=image/vnd.microsoft.icon
+*.css = svn:eol-style=native; svn:mime-type=text/css
+*.htm = svn:eol-style=native; svn:mime-type=text/html
+*.html = svn:eol-style=native; svn:mime-type=text/html
+*.tt = svn:eol-style=native; svn:mime-type=text/html
+*.tt2 = svn:eol-style=native; svn:mime-type=text/html
+*.awk = svn:eol-style=native; svn:mime-type=text/x-awk
+*.diff = svn:eol-style=native; svn:mime-type=text/x-diff
+*.patch = svn:eol-style=native; svn:mime-type=text/x-diff
+*.sql = svn:eol-style=native; svn:mime-type=text/x-sql
+*.glade = svn:eol-style=native; svn:mime-type=text/xml
+*.xml = svn:eol-style=native; svn:mime-type=text/xml
+
+
+
+
