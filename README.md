@@ -3,9 +3,13 @@ Correctly setting svn:mime types will allow files to be previewed correctly in V
 
 Collection of svn:mime-type for reference:
 
-########https://www.apache.org/dev/svn-eol-style.txt
-########https://www.dcepler.net/post.cfm/subversion-auto-properties
-########https://www4.cs.fau.de/~morty/autoprops.txt
-########http://stackoverflow.com/questions/711053/automatically-add-svnneeds-lock
-########http://padre.perlide.org/svn-mime-types.html
+##https://www.apache.org/dev/svn-eol-style.txt
+
+##https://www.dcepler.net/post.cfm/subversion-auto-properties
+
+##https://www4.cs.fau.de/~morty/autoprops.txt
+
+##http://stackoverflow.com/questions/711053/automatically-add-svnneeds-lock
+
+##http://padre.perlide.org/svn-mime-types.html
 
