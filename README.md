@@ -1,7 +1,7 @@
 # svn-auto-props
 Correctly setting svn:mime types will allow files to be previewed correctly in VisualSVN server, and be displayed in colour in wiki browser, and stored correctly in SVN.
 
-Collection of svn:mime-type for reference.
+Collection of svn:mime-type for reference:
 
 ########https://www.apache.org/dev/svn-eol-style.txt
 ########https://www.dcepler.net/post.cfm/subversion-auto-properties
